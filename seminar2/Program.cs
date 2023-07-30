@@ -27,7 +27,7 @@
 // 782 -> 72
 // 918 -> 98
 
-// int num = new Random().Next(100,1000);
+// int num = new Random().Next(100,10000);
 // Console.WriteLine(num);
 
 // int num1= num / 100;
@@ -91,17 +91,54 @@
 // 25, 5  ->  да
 // 8,9  ->  нет
 
-Console.WriteLine("Введите число");
-int num1 = Convert.ToInt32(Console.ReadLine());
+// Console.WriteLine("Введите число");
+// int num1 = Convert.ToInt32(Console.ReadLine());
 
-Console.WriteLine("Введите число");
-int num2 = Convert.ToInt32(Console.ReadLine());
+// Console.WriteLine("Введите число");
+// int num2 = Convert.ToInt32(Console.ReadLine());
 
-if((num1== num2*num2)|| (num2==num1*num1))
-{
-    Console.WriteLine("Да");
-}
-else
-{
-    Console.WriteLine("Нет");
-}
+// if((num1== num2*num2)|| (num2==num1*num1))
+// {
+//     Console.WriteLine("Да");
+// }
+// else
+// {
+//     Console.WriteLine("Нет");
+// }
+
+// Задача №17. Напишите программу, которая 
+// принимает на вход координаты точки (X и Y), 
+// причем X ≠ 0 и Y ≠ 0 и выдаёт номер четверти
+//  плоскости, в которой находится эта точка.
+
+// Задача №17. Напишите программу, которая 
+// принимает на вход координаты точки (X и Y), 
+// причем X ≠ 0 и Y ≠ 0 и выдаёт номер четверти
+//  плоскости, в которой находится эта точка.
+
+// Console.WriteLine("Введите число");
+// int X = Convert.ToInt32(Console.ReadLine());
+
+// Console.WriteLine("Введите число");
+// int Y = Convert.ToInt32(Console.ReadLine());
+
+// if(X>0 && Y>0)
+// {
+//     Console.WriteLine("1");
+// }
+// else if(X<0 && Y>0)
+// {
+//     Console.WriteLine("2");
+// }
+// else if(X<0 && Y<0)
+// {
+//     Console.WriteLine("3");
+// }
+// else if(X>0 && Y<0)
+// {
+//     Console.WriteLine("4");
+// }
+// else
+// {
+//     Console.WriteLine("Точка лежит на оси");
+// }
