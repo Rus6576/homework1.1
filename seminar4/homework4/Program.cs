@@ -30,3 +30,33 @@
 // System.Console.WriteLine(result);
 
 // System.Console.WriteLine(PowNum(numOne,numTwo));
+
+
+// Задача 27: Напишите программу, которая принимает 
+// на вход число и выдаёт сумму цифр в числе.
+// 452 -> 11
+// 82 -> 10
+// 9012 -> 12
+
+int NumCount(string num)
+{
+    int result = 0;
+    for(int i = 0; i < num.Length; i++)
+    {
+        int numSecond;
+        if(int.TryParse(num[i].ToString(), out numSecond))
+        {
+            result += numSecond;
+        }
+        else
+        {
+            Console.WriteLine("Ошибка! Введите число!");
+            return 0;
+        }
+    }
+     return result;
+}
+Console.Write("Введите число: ");
+string num = Console.ReadLine();
+Console.WriteLine(NumCount(num));
+
