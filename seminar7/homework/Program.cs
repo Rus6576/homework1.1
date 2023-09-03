@@ -77,51 +77,51 @@
 // 17 -> такого числа в массиве нет
 
 
-int[,] matrix = new int[6,8];
+// int[,] matrix = new int[6,8];
 
-for (int i = 0; i < matrix.GetLength(0); i++)
-{
-    for (int j = 0; j < matrix.GetLength(1); j++)
-    {
-        matrix[i,j] = new Random().Next(0,51);
-        Console.Write(matrix[i,j]+" ");
-    }
-    System.Console.WriteLine();
-}
-System.Console.WriteLine();
+// for (int i = 0; i < matrix.GetLength(0); i++)
+// {
+//     for (int j = 0; j < matrix.GetLength(1); j++)
+//     {
+//         matrix[i,j] = new Random().Next(0,51);
+//         Console.Write(matrix[i,j]+" ");
+//     }
+//     System.Console.WriteLine();
+// }
+// System.Console.WriteLine();
 
 
 
-System.Console.WriteLine("Введие номер строки от 0 до 5");
-int rows = Convert.ToInt32(Console.ReadLine());
+// System.Console.WriteLine("Введие номер строки от 0 до 5");
+// int rows = Convert.ToInt32(Console.ReadLine());
 
-if (rows >= 0 && rows < 6)
-{
-    System.Console.WriteLine("Введие номер столбца от 0 до 7");
-    int colomns = Convert.ToInt32(Console.ReadLine());
+// if (rows >= 0 && rows < 6)
+// {
+//     System.Console.WriteLine("Введие номер столбца от 0 до 7");
+//     int colomns = Convert.ToInt32(Console.ReadLine());
 
-    if (colomns >= 0 && colomns < 7)
-    {
-        for (int i = 0; i < matrix.GetLength(0); i++)
-        {
-            for (int j = 0; j < matrix.GetLength(1); j++)
-            {
-                if (i == rows && j == colomns)
-                {
-                    Console.Write($"Найденое число {matrix[i,j]}");
-                }
-            }
-        }
-    }
-    else
-    {
-        System.Console.WriteLine("Такого номера столбца в массиве нет");
-        return;
-    }
-}
-else
-{
-    System.Console.WriteLine("Такого номера строки в массиве нет");
-    return;
-}
-System.Console.WriteLine();
+//     if (colomns >= 0 && colomns < 7)
+//     {
+//         for (int i = 0; i < matrix.GetLength(0); i++)
+//         {
+//             for (int j = 0; j < matrix.GetLength(1); j++)
+//             {
+//                 if (i == rows && j == colomns)
+//                 {
+//                     Console.Write($"Найденое число {matrix[i,j]}");
+//                 }
+//             }
+//         }
+//     }
+//     else
+//     {
+//         System.Console.WriteLine("Такого номера столбца в массиве нет");
+//         return;
+//     }
+// }
+// else
+// {
+//     System.Console.WriteLine("Такого номера строки в массиве нет");
+//     return;
+// }
+// System.Console.WriteLine();
